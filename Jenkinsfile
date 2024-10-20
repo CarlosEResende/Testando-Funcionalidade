@@ -16,6 +16,11 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Install Expo CLI and Ngrok') {
+            steps {
+                bat 'npm install -g expo-cli @expo/ngrok'
+            }
+        }
         stage('Build') {
             steps {
                 bat 'npx expo start --tunnel'
