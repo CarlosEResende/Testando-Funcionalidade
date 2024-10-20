@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/CarlosEResende/Testando-Funcionalidade.git'
+                git branch: 'main', url: 'https://github.com/CarlosEResende/Testando-Funcionalidade.git'
             }
         }
         stage('Install Dependencies') {
