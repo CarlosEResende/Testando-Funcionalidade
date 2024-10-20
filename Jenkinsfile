@@ -16,14 +16,9 @@ pipeline {
                 bat 'npm install'
             }
         }
-        stage('Install Expo CLI') {
-            steps {
-                bat 'npm install -g expo-cli'
-            }
-        }
         stage('Build') {
             steps {
-                bat 'expo start --tunnel'
+                bat 'npx expo start --tunnel'
             }
         }
     }
