@@ -4,7 +4,7 @@ import AppRoutes from './navegacao/bottomTab';
 export default function App() {
   return (
     <NavigationContainer>
-      <AppRoutes />
+      <AppRoutes/>
     </NavigationContainer>
   );
 }
